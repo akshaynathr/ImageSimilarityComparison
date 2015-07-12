@@ -1,0 +1,86 @@
+<!DOCTYPE >
+
+<html>
+
+	
+	<head><title>Image comparison</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>       
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src={{url_for('static',filename='script.js')}}></script>
+	</head>
+
+
+<body>
+
+	<div id="container">
+		<div class="col-md-6" style="text-align:center;padding:5px;">
+		<div id="canv1">
+		<label>Url1 </label><input type="input" id="url1"/>
+		<button class="btn btn-info" id="u1" onclick=""> Fetch Image</button>
+			<br>
+		<form method="post" enctype="multipart/form-data"> 
+
+				<input id="i1" type="file" name="i1" class="btn"/>
+	<img src="#" id="myImg" alt="IMAGE" width='300' height='300' style="border:1px dotted #000"/>
+	</div>
+
+	<div id="can2">
+		
+		<label> Url2 </label><input type="input" id="url1"/>
+	<input id="i2" name="i2"  type="file" class="btn"/>
+	<img src="#" id="myImg2" alt="IMAGE" width='300' height='300' style="border:1px dotted #000"/>
+
+
+	</div>	
+	</div>
+
+	<div id="score" class="col-md-6" style="padding:5px;text-align:center">
+		<input type='submit' value="Compare Images"/>
+
+
+	
+
+		</div>
+
+		</form>
+		<script>
+$(function () {
+	    $("#i1").change(function () {
+		            if (this.files && this.files[0]) {
+				                var reader = new FileReader();
+						            reader.onload = imageIsLoaded;
+							                reader.readAsDataURL(this.files[0]);
+									        }
+			        });
+});
+
+function imageIsLoaded(e) {
+	    $('#myImg').attr('src', e.target.result);
+};
+$(function () {
+	    $("#i2").change(function () {
+		            if (this.files && this.files[0]) {
+				                var reader = new FileReader();
+						            reader.onload = imageIsLoaded2;
+							                reader.readAsDataURL(this.files[0]);
+									        }
+			        });
+});
+
+function imageIsLoaded2(e) {
+	    $('#myImg2').attr('src', e.target.result);
+};
+
+
+
+		</script>
+
+
+
+</body>
+
+
+
+</html>

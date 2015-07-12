@@ -1,0 +1,40 @@
+.. _example_plot_register_translation.py:
+
+
+=====================================
+Cross-Correlation (Phase Correlation)
+=====================================
+
+In this example, we use phase correlation to identify the relative shift
+between two similar-sized images.
+
+The ``register_translation`` function uses cross-correlation in Fourier space,
+optionally employing an upsampled matrix-multiplication DFT to achieve
+arbitrary subpixel precision. [1]_
+
+.. [1] Manuel Guizar-Sicairos, Samuel T. Thurman, and James R. Fienup,
+       "Efficient subpixel image registration algorithms," Optics Letters 33,
+       156-158 (2008).
+
+
+.. image:: images/plot_register_translation_1.png
+    :align: center
+
+
+.. image:: images/plot_register_translation_2.png
+    :align: center
+
+
+.. literalinclude:: plot_register_translation.py
+    :lines: 18-
+
+
+
+**Python source code:** :download:`download <plot_register_translation.py>`
+(generated using ``skimage`` |version|)
+
+
+
+**IPython Notebook:** :download:`download <./notebook/plot_register_translation.ipynb>`
+(generated using ``skimage`` |version|)
+

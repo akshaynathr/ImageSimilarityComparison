@@ -1,0 +1,203 @@
+.. AUTO-GENERATED FILE -- DO NOT EDIT!
+
+Module: :mod:`feature`
+======================
+.. automodule:: skimage.feature
+
+.. currentmodule:: skimage.feature
+.. autosummary::
+
+   skimage.feature.blob_dog
+   skimage.feature.blob_doh
+   skimage.feature.blob_log
+   skimage.feature.canny
+   skimage.feature.corner_fast
+   skimage.feature.corner_foerstner
+   skimage.feature.corner_harris
+   skimage.feature.corner_kitchen_rosenfeld
+   skimage.feature.corner_peaks
+   skimage.feature.corner_shi_tomasi
+   skimage.feature.corner_subpix
+   skimage.feature.daisy
+   skimage.feature.greycomatrix
+   skimage.feature.greycoprops
+   skimage.feature.hessian_matrix
+   skimage.feature.hessian_matrix_det
+   skimage.feature.hessian_matrix_eigvals
+   skimage.feature.hog
+   skimage.feature.local_binary_pattern
+   skimage.feature.match_descriptors
+   skimage.feature.match_template
+   skimage.feature.peak_local_max
+   skimage.feature.plot_matches
+   skimage.feature.register_translation
+   skimage.feature.structure_tensor
+   skimage.feature.structure_tensor_eigvals
+
+   skimage.feature.BRIEF
+   skimage.feature.CENSURE
+   skimage.feature.ORB
+
+blob_dog
+--------
+
+.. autofunction:: skimage.feature.blob_dog
+
+blob_doh
+--------
+
+.. autofunction:: skimage.feature.blob_doh
+
+blob_log
+--------
+
+.. autofunction:: skimage.feature.blob_log
+
+canny
+-----
+
+.. autofunction:: skimage.feature.canny
+
+corner_fast
+-----------
+
+.. autofunction:: skimage.feature.corner_fast
+
+corner_foerstner
+----------------
+
+.. autofunction:: skimage.feature.corner_foerstner
+
+corner_harris
+-------------
+
+.. autofunction:: skimage.feature.corner_harris
+
+corner_kitchen_rosenfeld
+------------------------
+
+.. autofunction:: skimage.feature.corner_kitchen_rosenfeld
+
+corner_peaks
+------------
+
+.. autofunction:: skimage.feature.corner_peaks
+
+corner_shi_tomasi
+-----------------
+
+.. autofunction:: skimage.feature.corner_shi_tomasi
+
+corner_subpix
+-------------
+
+.. autofunction:: skimage.feature.corner_subpix
+
+daisy
+-----
+
+.. autofunction:: skimage.feature.daisy
+
+greycomatrix
+------------
+
+.. autofunction:: skimage.feature.greycomatrix
+
+greycoprops
+-----------
+
+.. autofunction:: skimage.feature.greycoprops
+
+hessian_matrix
+--------------
+
+.. autofunction:: skimage.feature.hessian_matrix
+
+hessian_matrix_det
+------------------
+
+.. autofunction:: skimage.feature.hessian_matrix_det
+
+hessian_matrix_eigvals
+----------------------
+
+.. autofunction:: skimage.feature.hessian_matrix_eigvals
+
+hog
+---
+
+.. autofunction:: skimage.feature.hog
+
+local_binary_pattern
+--------------------
+
+.. autofunction:: skimage.feature.local_binary_pattern
+
+match_descriptors
+-----------------
+
+.. autofunction:: skimage.feature.match_descriptors
+
+match_template
+--------------
+
+.. autofunction:: skimage.feature.match_template
+
+peak_local_max
+--------------
+
+.. autofunction:: skimage.feature.peak_local_max
+
+plot_matches
+------------
+
+.. autofunction:: skimage.feature.plot_matches
+
+register_translation
+--------------------
+
+.. autofunction:: skimage.feature.register_translation
+
+structure_tensor
+----------------
+
+.. autofunction:: skimage.feature.structure_tensor
+
+structure_tensor_eigvals
+------------------------
+
+.. autofunction:: skimage.feature.structure_tensor_eigvals
+
+
+:class:`BRIEF`
+--------------
+
+
+.. autoclass:: BRIEF
+  :members:
+  :undoc-members:
+  :show-inheritance:
+
+  .. automethod:: __init__
+
+:class:`CENSURE`
+----------------
+
+
+.. autoclass:: CENSURE
+  :members:
+  :undoc-members:
+  :show-inheritance:
+
+  .. automethod:: __init__
+
+:class:`ORB`
+------------
+
+
+.. autoclass:: ORB
+  :members:
+  :undoc-members:
+  :show-inheritance:
+
+  .. automethod:: __init__

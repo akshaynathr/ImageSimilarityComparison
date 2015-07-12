@@ -1,0 +1,35 @@
+.. _example_plot_rag_draw.py:
+
+
+======================================
+Drawing Region Adjacency Graphs (RAGs)
+======================================
+
+This example constructs a Region Adjacency Graph (RAG) and draws it with
+the `rag_draw` method.
+
+.. image:: images/plot_rag_draw_1.png
+    :align: center
+
+
+.. image:: images/plot_rag_draw_2.png
+    :align: center
+
+
+.. image:: images/plot_rag_draw_3.png
+    :align: center
+
+
+.. literalinclude:: plot_rag_draw.py
+    :lines: 9-
+
+
+
+**Python source code:** :download:`download <plot_rag_draw.py>`
+(generated using ``skimage`` |version|)
+
+
+
+**IPython Notebook:** :download:`download <./notebook/plot_rag_draw.ipynb>`
+(generated using ``skimage`` |version|)
+

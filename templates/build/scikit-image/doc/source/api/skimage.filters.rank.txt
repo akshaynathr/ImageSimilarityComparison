@@ -1,0 +1,197 @@
+.. AUTO-GENERATED FILE -- DO NOT EDIT!
+
+Module: :mod:`filters.rank`
+===========================
+.. automodule:: skimage.filters.rank
+
+.. currentmodule:: skimage.filters.rank
+.. autosummary::
+
+   skimage.filters.rank.autolevel
+   skimage.filters.rank.autolevel_percentile
+   skimage.filters.rank.bottomhat
+   skimage.filters.rank.enhance_contrast
+   skimage.filters.rank.enhance_contrast_percentile
+   skimage.filters.rank.entropy
+   skimage.filters.rank.equalize
+   skimage.filters.rank.gradient
+   skimage.filters.rank.gradient_percentile
+   skimage.filters.rank.maximum
+   skimage.filters.rank.mean
+   skimage.filters.rank.mean_bilateral
+   skimage.filters.rank.mean_percentile
+   skimage.filters.rank.median
+   skimage.filters.rank.minimum
+   skimage.filters.rank.modal
+   skimage.filters.rank.noise_filter
+   skimage.filters.rank.otsu
+   skimage.filters.rank.percentile
+   skimage.filters.rank.pop
+   skimage.filters.rank.pop_bilateral
+   skimage.filters.rank.pop_percentile
+   skimage.filters.rank.subtract_mean
+   skimage.filters.rank.subtract_mean_percentile
+   skimage.filters.rank.sum
+   skimage.filters.rank.sum_bilateral
+   skimage.filters.rank.sum_percentile
+   skimage.filters.rank.threshold
+   skimage.filters.rank.threshold_percentile
+   skimage.filters.rank.tophat
+   skimage.filters.rank.windowed_histogram
+
+
+autolevel
+---------
+
+.. autofunction:: skimage.filters.rank.autolevel
+
+autolevel_percentile
+--------------------
+
+.. autofunction:: skimage.filters.rank.autolevel_percentile
+
+bottomhat
+---------
+
+.. autofunction:: skimage.filters.rank.bottomhat
+
+enhance_contrast
+----------------
+
+.. autofunction:: skimage.filters.rank.enhance_contrast
+
+enhance_contrast_percentile
+---------------------------
+
+.. autofunction:: skimage.filters.rank.enhance_contrast_percentile
+
+entropy
+-------
+
+.. autofunction:: skimage.filters.rank.entropy
+
+equalize
+--------
+
+.. autofunction:: skimage.filters.rank.equalize
+
+gradient
+--------
+
+.. autofunction:: skimage.filters.rank.gradient
+
+gradient_percentile
+-------------------
+
+.. autofunction:: skimage.filters.rank.gradient_percentile
+
+maximum
+-------
+
+.. autofunction:: skimage.filters.rank.maximum
+
+mean
+----
+
+.. autofunction:: skimage.filters.rank.mean
+
+mean_bilateral
+--------------
+
+.. autofunction:: skimage.filters.rank.mean_bilateral
+
+mean_percentile
+---------------
+
+.. autofunction:: skimage.filters.rank.mean_percentile
+
+median
+------
+
+.. autofunction:: skimage.filters.rank.median
+
+minimum
+-------
+
+.. autofunction:: skimage.filters.rank.minimum
+
+modal
+-----
+
+.. autofunction:: skimage.filters.rank.modal
+
+noise_filter
+------------
+
+.. autofunction:: skimage.filters.rank.noise_filter
+
+otsu
+----
+
+.. autofunction:: skimage.filters.rank.otsu
+
+percentile
+----------
+
+.. autofunction:: skimage.filters.rank.percentile
+
+pop
+---
+
+.. autofunction:: skimage.filters.rank.pop
+
+pop_bilateral
+-------------
+
+.. autofunction:: skimage.filters.rank.pop_bilateral
+
+pop_percentile
+--------------
+
+.. autofunction:: skimage.filters.rank.pop_percentile
+
+subtract_mean
+-------------
+
+.. autofunction:: skimage.filters.rank.subtract_mean
+
+subtract_mean_percentile
+------------------------
+
+.. autofunction:: skimage.filters.rank.subtract_mean_percentile
+
+sum
+---
+
+.. autofunction:: skimage.filters.rank.sum
+
+sum_bilateral
+-------------
+
+.. autofunction:: skimage.filters.rank.sum_bilateral
+
+sum_percentile
+--------------
+
+.. autofunction:: skimage.filters.rank.sum_percentile
+
+threshold
+---------
+
+.. autofunction:: skimage.filters.rank.threshold
+
+threshold_percentile
+--------------------
+
+.. autofunction:: skimage.filters.rank.threshold_percentile
+
+tophat
+------
+
+.. autofunction:: skimage.filters.rank.tophat
+
+windowed_histogram
+------------------
+
+.. autofunction:: skimage.filters.rank.windowed_histogram
+

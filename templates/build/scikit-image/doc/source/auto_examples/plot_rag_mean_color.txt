@@ -1,0 +1,33 @@
+.. _example_plot_rag_mean_color.py:
+
+
+================
+RAG Thresholding
+================
+
+This example constructs a Region Adjacency Graph (RAG) and merges regions
+which are similar in color. We construct a RAG and define edges as the
+difference in mean color. We then join regions with similar mean color.
+
+
+.. image:: images/plot_rag_mean_color_1.png
+    :align: center
+
+
+.. image:: images/plot_rag_mean_color_2.png
+    :align: center
+
+
+.. literalinclude:: plot_rag_mean_color.py
+    :lines: 11-
+
+
+
+**Python source code:** :download:`download <plot_rag_mean_color.py>`
+(generated using ``skimage`` |version|)
+
+
+
+**IPython Notebook:** :download:`download <./notebook/plot_rag_mean_color.ipynb>`
+(generated using ``skimage`` |version|)
+

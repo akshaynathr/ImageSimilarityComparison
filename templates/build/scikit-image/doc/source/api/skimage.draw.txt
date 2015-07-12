@@ -1,0 +1,41 @@
+.. AUTO-GENERATED FILE -- DO NOT EDIT!
+
+Module: :mod:`draw`
+===================
+.. automodule:: skimage.draw
+
+.. currentmodule:: skimage.draw
+.. autosummary::
+
+   skimage.draw.circle
+   skimage.draw.ellipse
+   skimage.draw.ellipsoid
+   skimage.draw.ellipsoid_stats
+   skimage.draw.set_color
+
+
+circle
+------
+
+.. autofunction:: skimage.draw.circle
+
+ellipse
+-------
+
+.. autofunction:: skimage.draw.ellipse
+
+ellipsoid
+---------
+
+.. autofunction:: skimage.draw.ellipsoid
+
+ellipsoid_stats
+---------------
+
+.. autofunction:: skimage.draw.ellipsoid_stats
+
+set_color
+---------
+
+.. autofunction:: skimage.draw.set_color
+

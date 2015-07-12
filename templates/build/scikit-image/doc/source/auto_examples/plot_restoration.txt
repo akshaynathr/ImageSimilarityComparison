@@ -1,0 +1,49 @@
+.. _example_plot_restoration.py:
+
+
+=====================
+Image Deconvolution
+=====================
+
+In this example, we deconvolve a noisy version of an image using Wiener
+and unsupervised Wiener algorithms. This algorithms are based on
+linear models that can't restore sharp edge as much as non-linear
+methods (like TV restoration) but are much faster.
+
+Wiener filter
+-------------
+The inverse filter based on the PSF (Point Spread Function),
+the prior regularisation (penalisation of high frequency) and the
+tradeoff between the data and prior adequacy. The regularization
+parameter must be hand tuned.
+
+Unsupervised Wiener
+-------------------
+This algorithm has a self-tuned regularisation parameters based on
+data learning. This is not common and based on the following
+publication. The algorithm is based on a iterative Gibbs sampler that
+draw alternatively samples of posterior conditionnal law of the image,
+the noise power and the image frequency power.
+
+.. [1] François Orieux, Jean-François Giovannelli, and Thomas
+       Rodet, "Bayesian estimation of regularization and point
+       spread function parameters for Wiener-Hunt deconvolution",
+       J. Opt. Soc. Am. A 27, 1593-1607 (2010)
+
+.. image:: images/plot_restoration_1.png
+    :align: center
+
+
+.. literalinclude:: plot_restoration.py
+    :lines: 32-
+
+
+
+**Python source code:** :download:`download <plot_restoration.py>`
+(generated using ``skimage`` |version|)
+
+
+
+**IPython Notebook:** :download:`download <./notebook/plot_restoration.ipynb>`
+(generated using ``skimage`` |version|)
+
