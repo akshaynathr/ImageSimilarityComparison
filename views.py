@@ -3,7 +3,7 @@ from flask import Flask,render_template,jsonify, request
 import os
 import shutil
 from index import *
-
+from SSIM import match
 from search import *
 import glob
 from werkzeug import secure_filename
@@ -58,12 +58,15 @@ def upload():
         
         file1.save(os.path.join(app.config['UPLOAD_FOLDER'],filename1))
         file2.save(os.path.join(app.config['QUERY'],filename2))
-        
-
+        f1= os.path.join(app.config['UPLOAD_FOLDER'],filename1)
+        f2=os.path.join(app.config['QUERY'],filename2)
         index(app.config['UPLOAD_FOLDER'])
         i,r=matcher(app.config['UPLOAD_FOLDER'],os.path.join(app.config['QUERY'],filename2))
         match1=i
         match2=r
-        return render_template('result.html',match1=match1,match2=match2) 
+        match3=match(f1,f2) 
+        match3=round(match3,4)*100
+        print(match3)
+        return render_template('result.html',match1=match1,match2=match2,match3=match3) 
 
     return "error"
