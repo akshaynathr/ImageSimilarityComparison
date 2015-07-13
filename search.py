@@ -3,7 +3,7 @@ import math
 from searcher import Searcher
 import os
 import argparse
-
+#from SSIM import *
 import cv2
 
 
@@ -40,6 +40,7 @@ def matcher(Dataset,Query):
 
     for (score,resultID) in results:
         result=cv2.imread(dataset+resultID)
+        #m=match(query_image,dataset+resultID)
         #cv2.imshow("Result",result)
         print(resultID)
         if score < 7.95:

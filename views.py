@@ -62,7 +62,8 @@ def upload():
 
         index(app.config['UPLOAD_FOLDER'])
         i,r=matcher(app.config['UPLOAD_FOLDER'],os.path.join(app.config['QUERY'],filename2))
-        match=" Match="+str(i)
-        return match
+        match1=i
+        match2=r
+        return render_template('result.html',match1=match1,match2=match2) 
 
     return "error"
