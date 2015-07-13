@@ -9,13 +9,25 @@
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script src={{url_for('static',filename='script.js')}}></script>
+
+<style>
+input[type="submit"]
+{
+width:9em; height:5em;
+color:#000;
+size:50px;
+
+}
+
+</style>
 	</head>
 
 
-<body>
+	<body background={{url_for('static',filename='back.jpg')}}>
 
-	<div id="container">
-		<div class="col-md-6" style="text-align:center;padding:5px;">
+	<div id="container" style="text-align:center; color:#fff;">
+		<h2> Please use images with medium filesize for fast performance </h2>
+		<div class="col-md-6 " style="text-align:center;padding:5px;">
 		<div id="canv1">
 			<br>
 		<form method="post" enctype="multipart/form-data"> 
@@ -23,17 +35,18 @@
 				<input id="i1" type="file" name="i1" class="btn"/>
 				<img src={{url_for('static',filename='background.png') }} id="myImg" alt="IMAGE" width='300' height='300' style="border:1px dotted #000"/>
 	</div>
+		</div>
+		<br>
 
-	<div id="can2">
+		<div class="col-md-6 " style="text-align:center;padding:5px;">
 		
 	<input id="i2" name="i2"  type="file" class="btn"/>
 	<img src= {{ url_for('static',filename='background.png') }} id="myImg2" alt="IMAGE" width='300' height='300' style="border:1px dotted #000"/>
 	<br>
-	<input type="submit"/>
-	</div>	
 	</div>
+	</div>	
 
-		</form>
+		</div>
 		<script>
 $(function () {
 	    $("#i1").change(function () {
@@ -67,6 +80,10 @@ function imageIsLoaded2(e) {
 		</script>
 
 
+
+	<div class="span 11" style="padding:30px; margin-top:2em;">
+	<input type="submit" value="Compare Images"/>
+	</div></form>
 
 </body>
 

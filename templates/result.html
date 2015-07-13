@@ -11,12 +11,12 @@
 <script src={{url_for('static',filename='script.js')}}></script>
 	</head>
 
-	<body>
-		<div class="container" >
-			<div class="col-md-6" style="text-align:center">
-				<h2> Color histogram match:<h2>	<h3> Match=</h3><h4>{{match1}}</h4>  		
-						<h2>Gray Scale Histogram match:</h2>	<br><h3> Match=</h3><h4>{{match2}}</h4>  		
-						<h2>SSIM match:</h2>	<br><h3> Match=</h3><h4>{{match3}}</h4>  		
+	<body background={{url_for('static',filename='back.jpg')}}>
+		<div class="container" style="color:#fff" >
+			<div class="col-md-6 col-md-offset-3" style="text-align:center">
+				<h2> Color histogram match:<h2>	<h3> Match=</h3><h4 style="color:red">{{match1}} %</h4>  		
+						<h2>Gray Scale Histogram match:</h2>	<br><h3> Match=</h3><h4 style="color:red">{{match2}} %</h4>  		
+						<h2>Structural Similarity  match:</h2>	<br><h3> Match=</h3><h4 style="color:red">{{match3}}%</h4>  		
 			</div>	
 		
 		
