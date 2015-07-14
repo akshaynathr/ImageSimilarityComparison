@@ -18,6 +18,18 @@ app.config['UPLOAD_FOLDER']='uploads/'
 app.config['ALLOWED_EXTENSIONS']=set(['png','jpg','jpeg'])
 
 
+
+def find_max(a,b,c):
+    max_val=a
+    if b>max_val:
+        max_val=b
+    if c>max_val:
+        max_val=c
+
+    return max_val 
+
+
+
 def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1] in app.config['ALLOWED_EXTENSIONS']
 
@@ -67,6 +79,7 @@ def upload():
         match3=match(f1,f2) 
         match3=round(match3,4)*100
         print(match3)
-        return render_template('result.html',match1=match1,match2=match2,match3=match3) 
+        maximum=find_max(match1,match2,match3)
+        return render_template('result.html',match1=match1,match2=match2,match3=match3,maximum=maximum) 
 
-    return "error"
+    return "<h1 style='color:red'> Error on input files. </h1>"

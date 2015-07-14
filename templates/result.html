@@ -9,16 +9,27 @@
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script src={{url_for('static',filename='script.js')}}></script>
+<script> $(document).ready(function(){ $('#details').hide();$("#show").click(function() { $("#details").show(); }); });</script>
+
+<style> .disabled { display:none;} button{color:#000;} </style>
 	</head>
 
 	<body background={{url_for('static',filename='back.jpg')}}>
 		<div class="container" style="color:#fff" >
+		
 			<div class="col-md-6 col-md-offset-3" style="text-align:center">
+
+				<h1 style='color:#fff'>  {{maximum}} % match between Images </h1>
+
+				<button id="show"> Show More Details </button>
+			</div>
+		
+			<div id="details"  class="col-md-6 col-md-offset-3" style="text-align:center">
 				<h2> Color histogram match:<h2>	<h3> Match=</h3><h4 style="color:red">{{match1}} %</h4>  		
 						<h2>Gray Scale Histogram match:</h2>	<br><h3> Match=</h3><h4 style="color:red">{{match2}} %</h4>  		
 						<h2>Structural Similarity  match:</h2>	<br><h3> Match=</h3><h4 style="color:red">{{match3}}%</h4>  		
 			</div>	
-		
+			
 		
 		
 		</div>
